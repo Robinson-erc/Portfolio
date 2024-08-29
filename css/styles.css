@@ -31,21 +31,21 @@
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 /* Body Styling */
-html,body {
+html, body {
     margin: 0;
     height: 100%;
 }
+
 /* Main Content Styling */
 main {
     flex: 1;
     padding: 60px 15%;
     text-align: center;
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-
 }
 
-/* Introduction Section Styling */
 /* Introduction Section Styling */
 .Introduction {
     display: flex;
@@ -85,7 +85,6 @@ main {
     margin: 0 auto;
     padding: 0 20px; /* Add padding to avoid text touching the edges */
 }
-
 
 /* Contact Form Styling */
 .contact-form {
@@ -153,6 +152,7 @@ main {
     margin-right: 10px;
     color: #f5f5f5;
 }
+
 /* Projects Section Styling */
 .projects {
     padding: 60px 15%;
@@ -213,6 +213,7 @@ main {
 .project-link:hover {
     text-decoration: underline;
 }
+
 /* Project Details Section Styling */
 .project-details {
     padding: 60px 15%;
@@ -256,7 +257,6 @@ main {
     display: block;
 }
 
-
 .project-link {
     display: inline-block;
     padding: 10px 20px;
@@ -270,7 +270,8 @@ main {
 .project-link:hover {
     background-color: #525a72;
 }
-/*resume*/
+
+/* Resume Section Styling */
 .resume {
     padding: 60px 15%;
     text-align: center;
@@ -286,67 +287,6 @@ main {
     width: 100%;
     height: 900px; /* Adjust height as needed */
     border: none;
-}
-
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .project-details {
-        padding: 40px 10%;
-    }
-
-    .gallery {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    }
-
-    .project-details h2 {
-        font-size: 28px;
-    }
-
-    .project-details p {
-        font-size: 16px;
-    }
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .projects {
-        padding: 40px 10%;
-    }
-
-    .project-info h3 {
-        font-size: 20px;
-    }
-
-    .project-info p {
-        font-size: 14px;
-    }
-}
-
-
-/* Footer Styling */
-footer {
-    background-color: #24252a;
-    color: #f5f5f5;
-    padding: 20px 10%;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-size: 14px;
-}
-
-.footer-links a {
-    color: #646b8b;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -370,8 +310,13 @@ footer p {
         padding: 40px 10%;
     }
 
+    .Introduction {
+        padding: 40px 10%;
+    }
+
     .Introduction .profile-pic img {
         width: 120px; /* Adjust for smaller screens */
+        height: 120px;
     }
 
     .Introduction h2 {
@@ -380,6 +325,44 @@ footer p {
 
     .Introduction p {
         font-size: 18px;
+    }
+
+    .contact-form {
+        padding: 30px;
+        max-width: 100%; /* Ensure the form takes full width on smaller screens */
+    }
+
+    .contact-info {
+        padding: 30px;
+        max-width: 100%; /* Ensure the contact info takes full width on smaller screens */
+    }
+
+    .projects {
+        padding: 40px 10%;
+    }
+
+    .project-info h3 {
+        font-size: 20px;
+    }
+
+    .project-info p {
+        font-size: 14px;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+
+    .project-details {
+        padding: 40px 10%;
+    }
+
+    .project-details h2 {
+        font-size: 28px;
+    }
+
+    .project-details p {
+        font-size: 16px;
     }
 
     footer {
