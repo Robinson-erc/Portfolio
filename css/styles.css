@@ -27,9 +27,17 @@
 
 .header nav ul li {
     margin-left: 20px; /* Space between each nav item */
+    text-decoration: none;
     color: #f5f5f5;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+}
+/* Prevent link color change on hover, focus, and active */
+.header nav ul li a:hover,
+.header nav ul li a:focus,
+.header nav ul li a:active {
+    color: #f5f5f5; /* Maintain the original color */
+    text-decoration: none; /* Optional: remove underline on hover/focus/active */
 }
 
 /* Body Styling */
