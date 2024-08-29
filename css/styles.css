@@ -27,8 +27,12 @@
 
 .header nav ul li {
     margin-left: 20px; /* Space between each nav item */
-    text-decoration: none;
-    color: #f5f5f5;
+}
+
+/* Header links styling */
+.header nav ul li a {
+    color: #f5f5f5; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -57,7 +61,7 @@ main {
     flex: 1;
     padding: 60px 15%;
     text-align: center;
-    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background: linear-gradient(178deg, rgba(201, 234, 252, 0.51) 14.9%, rgba(139, 192, 216, 0.73) 80%);
 }
 
 /* Introduction Section Styling */
@@ -314,8 +318,6 @@ main {
         height: 70vh; /* Adjust height for smaller screens */
     }
 }
-
-
 
 /* Footer Styling */
 footer {
