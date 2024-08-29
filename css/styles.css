@@ -294,30 +294,29 @@ main {
 
 /* Resume Section Styling */
 .resume {
-    padding: 60px 10%; /* Adjust padding for better spacing */
+    padding: 20px 5%; /* Adjust padding for better spacing */
     text-align: center;
 }
 
 .resume h2 {
-    font-size: 36px;
+    font-size: 28px;
     color: #24252a;
     margin-bottom: 20px;
 }
 
-.resume iframe {
-    width: 100%;
-    height: 90vh; /* Set a height based on viewport height for better visibility */
+/* Responsive iframe for mobile view */
+#resume-frame {
+    width: 100%; /* Make the iframe fit the screen width */
+    height: 80vh; /* Adjust height for better visibility */
     border: none;
-    max-width: 1200px; /* Set a maximum width to prevent excessive stretching */
-    margin: 0 auto; /* Center the iframe horizontally */
 }
 
-/* Responsive Design Adjustments for Mobile */
 @media (max-width: 768px) {
-    .resume iframe {
-        height: 70vh; /* Adjust height for smaller screens */
+    #resume-frame {
+        height: 100vh; /* Make the iframe taller for mobile screens */
     }
 }
+
 
 /* Footer Styling */
 footer {
